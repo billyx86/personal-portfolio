@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Billy King — Software engineer building tools for the web, ML systems, and the edge of the network." />
+  <title>Billy King — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0b'/><text y='.9em' x='50%' text-anchor='middle' font-size='70' fill='%232dd4bf'>B</text></svg>" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="glow glow-1" aria-hidden="true"></div>
+  <div class="glow glow-2" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-logo">
+      <span class="logo-mark">BK</span>
+      <span class="logo-text">Billy King</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-eyebrow">
+        <span class="pulse"></span>
+        Available for select projects
+      </div>
+      <h1 class="hero-title">
+        <span class="line">Software that</span>
+        <span class="line italic">feels inevitable.</span>
+      </h1>
+      <p class="hero-sub">
+        I’m Billy — a builder at the intersection of systems, machine learning,
+        and carefully crafted user tools. I ship products people actually want to keep open.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">
+          View selected work
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://github.com/billyx86" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-label">Focus</span>
+          <span class="meta-value">Systems · ML · Web</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Stack</span>
+          <span class="meta-value">Python · Go · JS · Rust</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Status</span>
+          <span class="meta-value status-live">Open to collab</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Systems Design</span><span class="dot">◆</span>
+        <span>Machine Learning</span><span class="dot">◆</span>
+        <span>Browser Extensions</span><span class="dot">◆</span>
+        <span>Network Security</span><span class="dot">◆</span>
+        <span>Developer Tools</span><span class="dot">◆</span>
+        <span>Edge Computing</span><span class="dot">◆</span>
+        <span>Systems Design</span><span class="dot">◆</span>
+        <span>Machine Learning</span><span class="dot">◆</span>
+        <span>Browser Extensions</span><span class="dot">◆</span>
+        <span>Network Security</span><span class="dot">◆</span>
+        <span>Developer Tools</span><span class="dot">◆</span>
+        <span>Edge Computing</span><span class="dot">◆</span>
+      </div>
+    </div>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section-header">
+        <p class="section-label">Selected work</p>
+        <h2 class="section-title">Projects with teeth.</h2>
+        <p class="section-desc">A few things I’ve built — from browser tools to ML systems to network infrastructure.</p>
+      </div>
+
+      <div class="bento">
+        <article class="card card-featured" data-reveal>
+          <div class="card-visual visual-queryhop">
+            <div class="visual-grid"></div>
+            <div class="visual-ui">
+              <div class="ui-bar">
+                <span class="ui-dot"></span>
+                <span class="ui-search">search → your engine</span>
+                <span class="ui-arrow">→</span>
+              </div>
+              <div class="ui-pills">
+                <span>Kagi</span><span>Perplexity</span><span>Startpage</span><span>Custom</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags"><span>Safari Extension</span><span>macOS</span><span>Shipping</span></div>
+            <h3>QueryHop</h3>
+            <p>A Safari extension that redirects searches to any engine you choose — presets for Kagi, Perplexity, Startpage, and full custom URL support. Available on the Mac App Store.</p>
+            <a href="https://github.com/billyx86/QueryHop" target="_blank" rel="noopener" class="card-link">
+              View project
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card-visual visual-mlx">
+            <div class="node-field" id="nodeField"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags"><span>ML</span><span>Apple MLX</span><span>Python</span></div>
+            <h3>MLX Batched KV Cache</h3>
+            <p>Exploration of batched key-value caching for faster parallel LLM inference on Apple Silicon using the MLX framework.</p>
+            <a href="https://github.com/billyx86/mlx-batched-kv-cache" target="_blank" rel="noopener" class="card-link">
+              View project
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card-visual visual-bookbot">
+            <div class="book-stack">
+              <div class="book b1"></div>
+              <div class="book b2"></div>
+              <div class="book b3"></div>
+              <div class="book-scan"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags"><span>Python</span><span>CLI</span><span>NLP</span></div>
+            <h3>Bookbot</h3>
+            <p>A clean CLI tool that reads text corpora and reports character-frequency and word statistics — built for learning systems programming habits in Python.</p>
+            <a href="https://github.com/billyx86/bookbot" target="_blank" rel="noopener" class="card-link">
+              View project
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card card-wide" data-reveal>
+          <div class="card-visual visual-guardian">
+            <div class="radar">
+              <div class="radar-ring r1"></div>
+              <div class="radar-ring r2"></div>
+              <div class="radar-ring r3"></div>
+              <div class="radar-sweep"></div>
+              <div class="radar-blip b1"></div>
+              <div class="radar-blip b2"></div>
+              <div class="radar-blip b3"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags"><span>.NET</span><span>Rust</span><span>ML.NET</span><span>Security</span></div>
+            <h3>Guardian Sentinel</h3>
+            <p>High-performance Network Behavior Anomaly Detection (NBAD) system with ML-powered threat detection, hardware acceleration, and real-time visualization. Built for teams that need signal, not noise.</p>
+            <a href="https://github.com/billyx86/guardian-sentinel" target="_blank" rel="noopener" class="card-link">
+              View project
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card-visual visual-nas">
+            <div class="nas-racks">
+              <div class="rack"><span></span><span></span><span></span></div>
+              <div class="rack"><span></span><span></span><span></span></div>
+              <div class="rack"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags"><span>Go</span><span>Self-hosted</span><span>Storage</span></div>
+            <h3>NAS Project</h3>
+            <p>A custom network-attached storage stack in Go — ownership of the data path from disk to API, designed for reliability over flashy demos.</p>
+            <a href="https://github.com/billyx86/nas-project" target="_blank" rel="noopener" class="card-link">
+              View project
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card-visual visual-psa">
+            <div class="psa-grid">
+              <div class="psa-cell"></div>
+              <div class="psa-cell active"></div>
+              <div class="psa-cell"></div>
+              <div class="psa-cell"></div>
+              <div class="psa-cell active"></div>
+              <div class="psa-cell"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags"><span>Vue</span><span>Python</span><span>Full-stack</span></div>
+            <h3>OpenPSA</h3>
+            <p>Professional services automation tooling — frontend in Vue, backend in Python — built to keep tickets, clients, and ops in one coherent surface.</p>
+            <a href="https://github.com/billyx86/openpsa" target="_blank" rel="noopener" class="card-link">
+              View project
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <div class="about-copy" data-reveal>
+          <p class="section-label">About</p>
+          <h2 class="section-title">Curious by default.<br /><em>Rigorous by design.</em></h2>
+          <p>
+            I build software where reliability and taste are not optional. Whether it’s a Safari extension that ships to the App Store,
+            an ML experiment on Apple Silicon, or a network monitoring stack that has to stay up — I care about the seams.
+          </p>
+          <p>
+            Lately I’ve been deep in local ML inference, self-hosted infrastructure, and tools that give people more control
+            over their software stack. I like problems that sit between systems and product.
+          </p>
+          <div class="about-stats">
+            <div>
+              <span class="stat-num">26+</span>
+              <span class="stat-label">Repositories</span>
+            </div>
+            <div>
+              <span class="stat-num">4</span>
+              <span class="stat-label">Core languages</span>
+            </div>
+            <div>
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Side projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-panel" data-reveal>
+          <div class="panel-avatar">
+            <div class="avatar-shape">
+              <span>BK</span>
+            </div>
+          </div>
+          <div class="panel-info">
+            <h3>Billy King</h3>
+            <p class="panel-role">Software Engineer</p>
+            <ul class="panel-list">
+              <li><span>GitHub</span><a href="https://github.com/billyx86" target="_blank" rel="noopener">@billyx86</a></li>
+              <li><span>Shipped</span><a href="https://github.com/billyx86/QueryHop" target="_blank" rel="noopener">QueryHop on MAS</a></li>
+              <li><span>Interests</span><em>ML · Edge · Security</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <p class="section-label">Capabilities</p>
+        <h2 class="section-title">Tools I reach for.</h2>
+      </div>
+      <div class="skills-grid" data-reveal>
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-chips">
+            <span>Python</span><span>Go</span><span>JavaScript</span><span>TypeScript</span><span>C#</span><span>Rust</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>ML & Data</h4>
+          <div class="skill-chips">
+            <span>Apple MLX</span><span>ML.NET</span><span>fast.ai</span><span>NumPy</span><span>PyTorch</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Web & Apps</h4>
+          <div class="skill-chips">
+            <span>Vue</span><span>React</span><span>Safari Extensions</span><span>Node</span><span>HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Systems</h4>
+          <div class="skill-chips">
+            <span>Networking</span><span>NAS / Storage</span><span>Docker</span><span>Linux</span><span>Security</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-inner" data-reveal>
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Let’s build something solid.</h2>
+        <p class="contact-desc">
+          Open to collaborations, interesting problems, and projects that need careful engineering.
+          The best way to reach me is through GitHub.
+        </p>
+        <div class="contact-actions">
+          <a href="https://github.com/billyx86" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18a4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+            github.com/billyx86
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Billy King</span>
+      <span class="footer-note">Built with care · No templates · No placeholders</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
