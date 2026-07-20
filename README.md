@@ -1,9 +1,47 @@
-# Mira Chen Portfolio
+# Mira Chen — Portfolio
 
-Personal portfolio for Mira Chen, Product designer & frontend engineer based in Oakland, CA.
+Personal portfolio for **Mira Chen**, product designer & frontend engineer based in Oakland, CA.
 
-Tagline: I design interfaces that feel inevitable.
+> I design interfaces that feel inevitable.
 
-Built with TanStack Start, React, Tailwind v4.
+## Aesthetic
 
-Note: This is a demo portfolio built for App Builder. Full source files to follow in subsequent commits if workspace shell is restored.
+- Dark charcoal editorial (`#121416`)
+- Single cool teal accent (`#2dd4bf`)
+- **Bricolage Grotesque** (display) + **Figtree** (body)
+- Soft 12px radius language
+- Asymmetric hero + bento work grid (not three equal cards)
+
+## Sections
+
+1. Sticky nav with mobile menu
+2. Asymmetric hero with status panel
+3. Selected work (asymmetric bento, 4 case studies)
+4. About
+5. Experience timeline (3 roles)
+6. Skills groups
+7. Contact form with toast feedback
+8. Footer
+
+## Run locally
+
+Static site — open `index.html` or serve the folder:
+
+```bash
+npx serve .
+# or
+python3 -m http.server 8080
+```
+
+## TanStack Start version
+
+See `/tanstack-app` for the React + TanStack Start + Tailwind v4 source structure intended for the App Builder sandbox (`0.0.0.0:8080`).
+
+## Persona (fictional demo)
+
+| Field | Value |
+|-------|-------|
+| Name | Mira Chen |
+| Role | Product designer & frontend engineer |
+| Location | Oakland, CA |
+| Skills | Design systems, React, TypeScript, motion, accessibility |

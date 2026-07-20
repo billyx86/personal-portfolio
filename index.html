@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Billy King — Software engineer building tools for the web, ML systems, and the edge of the network." />
-  <title>Billy King — Portfolio</title>
+  <meta name="description" content="Mira Chen — Product designer & frontend engineer. I design interfaces that feel inevitable. Oakland, CA." />
+  <meta name="theme-color" content="#121416" />
+  <title>Mira Chen — Product designer & frontend engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0b'/><text y='.9em' x='50%' text-anchor='middle' font-size='70' fill='%232dd4bf'>B</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%121416'/><text y='.92em' x='50%' text-anchor='middle' font-size='58' font-family='system-ui' font-weight='700' fill='%232dd4bf'>M</text></svg>" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
-  <div class="glow glow-1" aria-hidden="true"></div>
-  <div class="glow glow-2" aria-hidden="true"></div>
 
   <header class="nav" id="nav">
     <a href="#top" class="nav-logo">
-      <span class="logo-mark">BK</span>
-      <span class="logo-text">Billy King</span>
+      <span class="logo-mark">MC</span>
+      <span class="logo-text">Mira Chen</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#work">Work</a>
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact" class="nav-cta">Contact</a>
     </nav>
@@ -35,6 +35,7 @@
   <div class="mobile-menu" id="mobileMenu" hidden>
     <a href="#work">Work</a>
     <a href="#about">About</a>
+    <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </div>
@@ -42,189 +43,139 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-eyebrow">
-        <span class="pulse"></span>
-        Available for select projects
-      </div>
-      <h1 class="hero-title">
-        <span class="line">Software that</span>
-        <span class="line italic">feels inevitable.</span>
-      </h1>
-      <p class="hero-sub">
-        I’m Billy — a builder at the intersection of systems, machine learning,
-        and carefully crafted user tools. I ship products people actually want to keep open.
-      </p>
-      <div class="hero-actions">
-        <a href="#work" class="btn btn-primary">
-          View selected work
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="https://github.com/billyx86" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
-      </div>
-      <div class="hero-meta">
-        <div class="meta-item">
-          <span class="meta-label">Focus</span>
-          <span class="meta-value">Systems · ML · Web</span>
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="pulse"></span>
+          Oakland, CA · Open for staff design roles
         </div>
-        <div class="meta-item">
-          <span class="meta-label">Stack</span>
-          <span class="meta-value">Python · Go · JS · Rust</span>
+        <h1 class="hero-title">
+          <span class="line">I design interfaces</span>
+          <span class="line accent-line">that feel inevitable</span>
+        </h1>
+        <p class="hero-sub">
+          Mira Chen is a product designer and frontend engineer who bridges systems
+          thinking with craft. Design systems, accessible React, and motion that earns its place.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">
+            Selected work
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Start a conversation</a>
         </div>
-        <div class="meta-item">
-          <span class="meta-label">Status</span>
-          <span class="meta-value status-live">Open to collab</span>
+      </div>
+      <div class="hero-right" aria-hidden="true">
+        <div class="hero-panel">
+          <div class="panel-row">
+            <span class="panel-k">Role</span>
+            <span class="panel-v">Product designer & frontend engineer</span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-k">Currently</span>
+            <span class="panel-v">Staff IC · design systems</span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-k">Focus</span>
+            <span class="panel-v">React · TypeScript · a11y · motion</span>
+          </div>
+          <div class="panel-row highlight">
+            <span class="panel-k">Next</span>
+            <span class="panel-v status">Hiring managers welcome</span>
+          </div>
+          <div class="panel-mono">
+            <code>interface Craft { calm: true; precise: true }</code>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Systems Design</span><span class="dot">◆</span>
-        <span>Machine Learning</span><span class="dot">◆</span>
-        <span>Browser Extensions</span><span class="dot">◆</span>
-        <span>Network Security</span><span class="dot">◆</span>
-        <span>Developer Tools</span><span class="dot">◆</span>
-        <span>Edge Computing</span><span class="dot">◆</span>
-        <span>Systems Design</span><span class="dot">◆</span>
-        <span>Machine Learning</span><span class="dot">◆</span>
-        <span>Browser Extensions</span><span class="dot">◆</span>
-        <span>Network Security</span><span class="dot">◆</span>
-        <span>Developer Tools</span><span class="dot">◆</span>
-        <span>Edge Computing</span><span class="dot">◆</span>
-      </div>
-    </div>
-
-    <!-- WORK -->
+    <!-- WORK BENTO -->
     <section class="section" id="work">
-      <div class="section-header">
-        <p class="section-label">Selected work</p>
-        <h2 class="section-title">Projects with teeth.</h2>
-        <p class="section-desc">A few things I’ve built — from browser tools to ML systems to network infrastructure.</p>
+      <div class="section-header asymmetric">
+        <div>
+          <p class="section-label">Selected work</p>
+          <h2 class="section-title">Case studies with outcomes.</h2>
+        </div>
+        <p class="section-desc">Four product efforts where design and engineering shipped together. Outcomes are specific; vanity metrics stay offline.</p>
       </div>
 
       <div class="bento">
-        <article class="card card-featured" data-reveal>
-          <div class="card-visual visual-queryhop">
-            <div class="visual-grid"></div>
-            <div class="visual-ui">
-              <div class="ui-bar">
-                <span class="ui-dot"></span>
-                <span class="ui-search">search → your engine</span>
-                <span class="ui-arrow">→</span>
-              </div>
-              <div class="ui-pills">
-                <span>Kagi</span><span>Perplexity</span><span>Startpage</span><span>Custom</span>
-              </div>
+        <article class="card card-lg" data-reveal>
+          <div class="card-visual v-atlas">
+            <div class="atlas-grid">
+              <div class="atlas-cell"></div>
+              <div class="atlas-cell filled"></div>
+              <div class="atlas-cell"></div>
+              <div class="atlas-cell filled mid"></div>
+              <div class="atlas-cell"></div>
+              <div class="atlas-cell filled"></div>
             </div>
+            <div class="atlas-label">Atlas DS · v3</div>
           </div>
           <div class="card-body">
-            <div class="card-tags"><span>Safari Extension</span><span>macOS</span><span>Shipping</span></div>
-            <h3>QueryHop</h3>
-            <p>A Safari extension that redirects searches to any engine you choose — presets for Kagi, Perplexity, Startpage, and full custom URL support. Available on the Mac App Store.</p>
-            <a href="https://github.com/billyx86/QueryHop" target="_blank" rel="noopener" class="card-link">
-              View project
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
+            <div class="card-tags"><span>Design system</span><span>React</span><span>2024–25</span></div>
+            <h3>Atlas Design System</h3>
+            <p>Rebuilt a multi-product component library for a Series C fintech. Unified 11 product surfaces onto one token pipeline, cut design-to-dev handoff rework by roughly half, and shipped WCAG 2.2 AA defaults.</p>
+            <div class="card-outcome">
+              <span>Outcome</span>
+              <strong>48% fewer UI bugs in QA · 3 teams on shared tokens</strong>
+            </div>
           </div>
         </article>
 
-        <article class="card" data-reveal>
-          <div class="card-visual visual-mlx">
-            <div class="node-field" id="nodeField"></div>
-          </div>
-          <div class="card-body">
-            <div class="card-tags"><span>ML</span><span>Apple MLX</span><span>Python</span></div>
-            <h3>MLX Batched KV Cache</h3>
-            <p>Exploration of batched key-value caching for faster parallel LLM inference on Apple Silicon using the MLX framework.</p>
-            <a href="https://github.com/billyx86/mlx-batched-kv-cache" target="_blank" rel="noopener" class="card-link">
-              View project
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <article class="card" data-reveal>
-          <div class="card-visual visual-bookbot">
-            <div class="book-stack">
-              <div class="book b1"></div>
-              <div class="book b2"></div>
-              <div class="book b3"></div>
-              <div class="book-scan"></div>
+        <article class="card card-sm" data-reveal>
+          <div class="card-visual v-ledger">
+            <div class="ledger-bars">
+              <span style="--h:42%"></span>
+              <span style="--h:68%"></span>
+              <span style="--h:55%"></span>
+              <span style="--h:82%"></span>
+              <span style="--h:70%"></span>
             </div>
           </div>
           <div class="card-body">
-            <div class="card-tags"><span>Python</span><span>CLI</span><span>NLP</span></div>
-            <h3>Bookbot</h3>
-            <p>A clean CLI tool that reads text corpora and reports character-frequency and word statistics — built for learning systems programming habits in Python.</p>
-            <a href="https://github.com/billyx86/bookbot" target="_blank" rel="noopener" class="card-link">
-              View project
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
+            <div class="card-tags"><span>Product</span><span>Motion</span></div>
+            <h3>Ledger Flow</h3>
+            <p>Redesigned reconciliation for mid-market finance ops. Progressive disclosure and micro-motion reduced average task time from 11 minutes to under 4.</p>
+            <div class="card-outcome">
+              <span>Outcome</span>
+              <strong>Task time −64% on pilot cohort</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-sm" data-reveal>
+          <div class="card-visual v-signal">
+            <div class="signal-wave"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags"><span>A11y</span><span>TypeScript</span></div>
+            <h3>Signal Inbox</h3>
+            <p>Keyboard-first triage for customer support. Full screen-reader map, roving tabindex, and reduced-motion paths as first-class features.</p>
+            <div class="card-outcome">
+              <span>Outcome</span>
+              <strong>NPS +18 with power users</strong>
+            </div>
           </div>
         </article>
 
         <article class="card card-wide" data-reveal>
-          <div class="card-visual visual-guardian">
-            <div class="radar">
-              <div class="radar-ring r1"></div>
-              <div class="radar-ring r2"></div>
-              <div class="radar-ring r3"></div>
-              <div class="radar-sweep"></div>
-              <div class="radar-blip b1"></div>
-              <div class="radar-blip b2"></div>
-              <div class="radar-blip b3"></div>
+          <div class="card-visual v-north">
+            <div class="north-map">
+              <div class="north-pin p1"></div>
+              <div class="north-pin p2"></div>
+              <div class="north-pin p3"></div>
+              <div class="north-line"></div>
             </div>
           </div>
           <div class="card-body">
-            <div class="card-tags"><span>.NET</span><span>Rust</span><span>ML.NET</span><span>Security</span></div>
-            <h3>Guardian Sentinel</h3>
-            <p>High-performance Network Behavior Anomaly Detection (NBAD) system with ML-powered threat detection, hardware acceleration, and real-time visualization. Built for teams that need signal, not noise.</p>
-            <a href="https://github.com/billyx86/guardian-sentinel" target="_blank" rel="noopener" class="card-link">
-              View project
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <article class="card" data-reveal>
-          <div class="card-visual visual-nas">
-            <div class="nas-racks">
-              <div class="rack"><span></span><span></span><span></span></div>
-              <div class="rack"><span></span><span></span><span></span></div>
-              <div class="rack"><span></span><span></span><span></span></div>
+            <div class="card-tags"><span>0→1 product</span><span>Design + FE</span><span>2023</span></div>
+            <h3>Northbound</h3>
+            <p>Co-founded the interface for a route-planning tool used by regional logistics teams. Designed the spatial UI, built the React map shell, and established the interaction model still in production.</p>
+            <div class="card-outcome">
+              <span>Outcome</span>
+              <strong>Launched in 14 weeks · still primary UI two years later</strong>
             </div>
-          </div>
-          <div class="card-body">
-            <div class="card-tags"><span>Go</span><span>Self-hosted</span><span>Storage</span></div>
-            <h3>NAS Project</h3>
-            <p>A custom network-attached storage stack in Go — ownership of the data path from disk to API, designed for reliability over flashy demos.</p>
-            <a href="https://github.com/billyx86/nas-project" target="_blank" rel="noopener" class="card-link">
-              View project
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <article class="card" data-reveal>
-          <div class="card-visual visual-psa">
-            <div class="psa-grid">
-              <div class="psa-cell"></div>
-              <div class="psa-cell active"></div>
-              <div class="psa-cell"></div>
-              <div class="psa-cell"></div>
-              <div class="psa-cell active"></div>
-              <div class="psa-cell"></div>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="card-tags"><span>Vue</span><span>Python</span><span>Full-stack</span></div>
-            <h3>OpenPSA</h3>
-            <p>Professional services automation tooling — frontend in Vue, backend in Python — built to keep tickets, clients, and ops in one coherent surface.</p>
-            <a href="https://github.com/billyx86/openpsa" target="_blank" rel="noopener" class="card-link">
-              View project
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
           </div>
         </article>
       </div>
@@ -235,78 +186,106 @@
       <div class="about-grid">
         <div class="about-copy" data-reveal>
           <p class="section-label">About</p>
-          <h2 class="section-title">Curious by default.<br /><em>Rigorous by design.</em></h2>
+          <h2 class="section-title">Calm systems.<br /><em class="accent-em">Clear craft.</em></h2>
           <p>
-            I build software where reliability and taste are not optional. Whether it’s a Safari extension that ships to the App Store,
-            an ML experiment on Apple Silicon, or a network monitoring stack that has to stay up — I care about the seams.
+            I started as a visual designer, learned to ship React in production, and never fully chose one lane.
+            That hybrid is the point: I can sit in a critique and a PR review on the same day without translating.
           </p>
           <p>
-            Lately I’ve been deep in local ML inference, self-hosted infrastructure, and tools that give people more control
-            over their software stack. I like problems that sit between systems and product.
+            I care about design systems that engineers trust, motion that explains state instead of decorating it,
+            and accessibility treated as structure rather than a checklist at the end.
           </p>
-          <div class="about-stats">
-            <div>
-              <span class="stat-num">26+</span>
-              <span class="stat-label">Repositories</span>
-            </div>
-            <div>
-              <span class="stat-num">4</span>
-              <span class="stat-label">Core languages</span>
-            </div>
-            <div>
-              <span class="stat-num">∞</span>
-              <span class="stat-label">Side projects</span>
-            </div>
-          </div>
+          <p class="about-note">Based in Oakland. Prefer thoughtful product teams over chaotic growth theater.</p>
         </div>
         <div class="about-panel" data-reveal>
-          <div class="panel-avatar">
-            <div class="avatar-shape">
-              <span>BK</span>
-            </div>
+          <div class="avatar">
+            <span>MC</span>
           </div>
           <div class="panel-info">
-            <h3>Billy King</h3>
-            <p class="panel-role">Software Engineer</p>
+            <h3>Mira Chen</h3>
+            <p class="panel-role">Product designer & frontend engineer</p>
             <ul class="panel-list">
-              <li><span>GitHub</span><a href="https://github.com/billyx86" target="_blank" rel="noopener">@billyx86</a></li>
-              <li><span>Shipped</span><a href="https://github.com/billyx86/QueryHop" target="_blank" rel="noopener">QueryHop on MAS</a></li>
-              <li><span>Interests</span><em>ML · Edge · Security</em></li>
+              <li><span>Location</span><em>Oakland, CA</em></li>
+              <li><span>Email</span><a href="mailto:mira@mira.design">mira@mira.design</a></li>
+              <li><span>Working</span><em>Hybrid · remote-friendly</em></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-header">
+        <p class="section-label">Experience</p>
+        <h2 class="section-title">Where the work happened.</h2>
+      </div>
+      <ol class="timeline" data-reveal>
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <span class="timeline-years">2022 – Present</span>
+            <span class="timeline-place">Meridian Labs · Oakland</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Staff Product Designer / Frontend</h3>
+            <p>Lead design systems and high-traffic product surfaces. Own Atlas DS, partner with platform eng on token architecture, and ship React features end-to-end for finance workflows.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <span class="timeline-years">2019 – 2022</span>
+            <span class="timeline-place">Northbound · Remote</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Founding Designer & Engineer</h3>
+            <p>0→1 product design and frontend for logistics route planning. Established the design language, built the map shell in React/TypeScript, and hired the second designer.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <span class="timeline-years">2016 – 2019</span>
+            <span class="timeline-place">Fieldnote · San Francisco</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Product Designer</h3>
+            <p>Designed research tooling for academic and enterprise labs. Grew from visual design into interaction systems and a small shared component kit used by three product squads.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
     <!-- SKILLS -->
     <section class="section" id="skills">
       <div class="section-header">
-        <p class="section-label">Capabilities</p>
-        <h2 class="section-title">Tools I reach for.</h2>
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">How I show up in a team.</h2>
       </div>
       <div class="skills-grid" data-reveal>
         <div class="skill-group">
-          <h4>Languages</h4>
+          <h4>Design</h4>
           <div class="skill-chips">
-            <span>Python</span><span>Go</span><span>JavaScript</span><span>TypeScript</span><span>C#</span><span>Rust</span>
+            <span>Design systems</span><span>Interaction design</span><span>Visual craft</span><span>Prototyping</span><span>Design critique</span>
           </div>
         </div>
         <div class="skill-group">
-          <h4>ML & Data</h4>
+          <h4>Frontend</h4>
           <div class="skill-chips">
-            <span>Apple MLX</span><span>ML.NET</span><span>fast.ai</span><span>NumPy</span><span>PyTorch</span>
+            <span>React</span><span>TypeScript</span><span>Tailwind</span><span>TanStack</span><span>Component APIs</span>
           </div>
         </div>
         <div class="skill-group">
-          <h4>Web & Apps</h4>
+          <h4>Motion & quality</h4>
           <div class="skill-chips">
-            <span>Vue</span><span>React</span><span>Safari Extensions</span><span>Node</span><span>HTML/CSS</span>
+            <span>Motion design</span><span>Accessibility</span><span>Performance budgets</span><span>Design tokens</span>
           </div>
         </div>
         <div class="skill-group">
-          <h4>Systems</h4>
+          <h4>Practice</h4>
           <div class="skill-chips">
-            <span>Networking</span><span>NAS / Storage</span><span>Docker</span><span>Linux</span><span>Security</span>
+            <span>System thinking</span><span>Writing specs</span><span>Mentoring</span><span>Cross-functional facilitation</span>
           </div>
         </div>
       </div>
@@ -314,29 +293,49 @@
 
     <!-- CONTACT -->
     <section class="section contact" id="contact">
-      <div class="contact-inner" data-reveal>
-        <p class="section-label">Contact</p>
-        <h2 class="section-title">Let’s build something solid.</h2>
-        <p class="contact-desc">
-          Open to collaborations, interesting problems, and projects that need careful engineering.
-          The best way to reach me is through GitHub.
-        </p>
-        <div class="contact-actions">
-          <a href="https://github.com/billyx86" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18a4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
-            github.com/billyx86
-          </a>
+      <div class="contact-grid">
+        <div class="contact-copy" data-reveal>
+          <p class="section-label">Contact</p>
+          <h2 class="section-title">Tell me about the product.</h2>
+          <p class="contact-desc">
+            Hiring managers, founders, and collaborators: send a short note with context.
+            I read every message and reply within a few days when something fits.
+          </p>
+          <a class="contact-email" href="mailto:mira@mira.design">mira@mira.design</a>
         </div>
+        <form class="contact-form" id="contactForm" data-reveal novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Alex Rivera" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="alex@company.com" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="What are you building, and how might I help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            Send message
+          </button>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      <span>© <span id="year"></span> Billy King</span>
-      <span class="footer-note">Built with care · No templates · No placeholders</span>
+      <span>© <span id="year"></span> Mira Chen</span>
+      <span class="footer-note">Oakland · Product design · Frontend engineering</span>
+      <a href="#top" class="footer-top">Back to top</a>
     </div>
   </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span class="toast-dot"></span>
+    <span id="toastMsg">Message sent. I’ll get back to you soon.</span>
+  </div>
 
   <script src="app.js"></script>
 </body>
