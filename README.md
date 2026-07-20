@@ -1,29 +1,9 @@
-# Billy King — Personal Portfolio
+# Mira Chen Portfolio
 
-A dark, editorial personal portfolio for [Billy King](https://github.com/billyx86).
+Personal portfolio for Mira Chen, Product designer & frontend engineer based in Oakland, CA.
 
-## Stack
+Tagline: I design interfaces that feel inevitable.
 
-- Static HTML / CSS / vanilla JS
-- Instrument Serif + DM Sans + JetBrains Mono
-- No build step — open `index.html` or serve the folder
+Built with TanStack Start, React, Tailwind v4.
 
-## Local preview
-
-```bash
-npx serve .
-# or
-python3 -m http.server 8080
-```
-
-## Sections
-
-- Hero with availability status
-- Selected work (QueryHop, MLX, Bookbot, Guardian Sentinel, NAS, OpenPSA)
-- About + profile panel
-- Skills
-- Contact via GitHub
-
-## Customize
-
-Edit copy in `index.html`, tokens in `styles.css`, and behavior in `app.js`.
+Note: This is a demo portfolio built for App Builder. Full source files to follow in subsequent commits if workspace shell is restored.
