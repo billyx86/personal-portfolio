@@ -25,12 +25,13 @@ Personal portfolio for **Mira Chen**, product designer & frontend engineer based
 
 ## Run locally
 
-Static site — open `index.html` or serve the folder:
+The deployable static site lives in `public/` (that is what GitHub Pages
+deploys). Open `public/index.html` or serve that folder:
 
 ```bash
-npx serve .
+npx serve public
 # or
-python3 -m http.server 8080
+python3 -m http.server 8080 -d public
 ```
 
 ## TanStack Start version

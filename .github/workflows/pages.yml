@@ -28,7 +28,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          # Only the deployable static site. The repo root also holds the
+          # nested `tanstack-app/` source tree and `.github/`, which must not
+          # be published to GitHub Pages.
+          path: public
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
